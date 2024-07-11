@@ -1,116 +1,78 @@
 body {
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#logo{
+#logo {
     width: 14%;
     margin-top: 1.2%;
-    margin-left: 2.5%;
 }
 
-div.title{
-    font-size: 320%;
+div.title {
+    font-size: 3.2rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 2.5%;
+    text-align: center;
     margin-top: 2%;
 }
 
-#beauty , #construction{
-    width: 20%;
-    display: inline;
-}
-.beauty-div{
-    display: inline;
-    position: relative;
-    left:2%;
-    top:50px;
-}
-
-.construction-div{
-    display: inline;
-    position: relative;
-    top:50px;
-    left: 30%;
-   
-}
-
-
-#beauty-text {
-    width: 65%;
-    display: inline;
-    position: absolute;
-    top:-175px;
-    z-index: 2;
-    left:110%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 115%;
-}
-
-#construction-text{
+.content {
     width: 100%;
-    display: inline;
-    position: absolute;
-    top:-170px;
-    z-index: 2;
-    left:110%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.section-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+.section-text {
+    width: 90%;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 115%;
+    font-size: 1.15rem;
+    margin-top: 10px;
 }
 
-#last{
-    color:rgb(12, 12, 118);;
-    position: relative;
-    top:230px;
-    left:80%;
-    width: 15%;
+#last {
+    color: rgb(12, 12, 118);
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-
-
-@media (max-width:500px) {
-    #logo{
+@media (max-width: 500px) {
+    #logo {
         width: 30%;
         margin-top: 5%;
     }
 
-    div.title{
+    div.title {
+        font-size: 2rem;
         width: 70%;
-        position: relative;
-        left:20%;
-        top:30px;
     }
 
-    #beauty{
+    .section-image {
         width: 90%;
-        position: relative;
-        left: 3%;
     }
 
-    #beauty-text{
-        width: 20%;
-        position: relative;
-        top:-10px;
-        left:3%;
-    }
-
-    #construction{
+    .section-text {
         width: 90%;
-        position: relative;
-        left:-25%;
-        top:40px;
+        font-size: 1rem;
     }
 
-    #construction-text{
-        width: 20%;
-        position: relative;
-        top:30px;
-        left:-25%;
-    }
-
-    #last{
-        position: relative;
-        left:60%;
-        top:125px;
-        width: 40%;
+    #last {
+        font-size: 1.2rem;
     }
 }
